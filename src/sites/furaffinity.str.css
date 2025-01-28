@@ -10,3 +10,13 @@
 #frontpage .gallery-section:nth-child(5) {
 	display: none;
 }
+
+#messages-watches .section-body,
+#messages-favorites .section-body {
+	display: none;
+}
+
+.notification-container[href^='/msg/others/#watches'],
+.notification-container[href^='/msg/others/#favorites'] {
+	display: none !important;
+}

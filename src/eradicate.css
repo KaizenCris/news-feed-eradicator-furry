@@ -267,3 +267,8 @@ html:not([data-nfe-enabled='false']) #primary > #nfe-container {
 	opacity: 0 !important;
 	pointer-events: none !important;
 }
+
+/* FurAffinity */
+.notification-container {
+	color: #5b5b5b !important;
+}
