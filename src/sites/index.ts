@@ -3,10 +3,12 @@ import twitterCss from './twitter.str.css';
 import linkedinCss from './linkedin.str.css';
 import githubCss from './github.str.css';
 import furaffinityCss from './furaffinity.str.css';
+import inkbunnyCss from './inkbunny.str.css';
 
 export type SiteId =
-	| 'facebook'
 	| 'furaffinity'
+	| 'inkbunny'
+	| 'facebook'
 	| 'twitter'
 	| 'reddit'
 	| 'hackernews'
@@ -22,6 +24,13 @@ export const Sites: Record<SiteId, Site> = {
 		paths: ['/'],
 		origins: ['http://www.furaffinity.net/*', 'https://www.furaffinity.net/*'],
 		css: furaffinityCss,
+	},
+	inkbunny: {
+		label: 'InkBunny',
+		domain: ['inkbunny.net'],
+		paths: ['/'],
+		origins: ['http://inkbunny.net/*', 'https://inkbunny.net/*'],
+		css: inkbunnyCss,
 	},
 	facebook: {
 		label: 'Facebook',
