@@ -1,0 +1,12 @@
+/* Furaffinity feed */
+#frontpage .gallery figure {
+	opacity: 0 !important;
+	pointer-events: none !important;
+	display: none !important;
+}
+
+#frontpage .gallery-section:nth-child(3),
+#frontpage .gallery-section:nth-child(4),
+#frontpage .gallery-section:nth-child(5) {
+	display: none;
+}

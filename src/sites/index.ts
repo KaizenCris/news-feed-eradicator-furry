@@ -2,9 +2,11 @@ import instagramCss from './instagram.str.css';
 import twitterCss from './twitter.str.css';
 import linkedinCss from './linkedin.str.css';
 import githubCss from './github.str.css';
+import furaffinityCss from './furaffinity.str.css';
 
 export type SiteId =
 	| 'facebook'
+	| 'furaffinity'
 	| 'twitter'
 	| 'reddit'
 	| 'hackernews'
@@ -14,6 +16,13 @@ export type SiteId =
 	| 'github';
 
 export const Sites: Record<SiteId, Site> = {
+	furaffinity: {
+		label: 'FurAffinity',
+		domain: ['furaffinity.net'],
+		paths: ['/'],
+		origins: ['http://www.furaffinity.net/*', 'https://www.furaffinity.net/*'],
+		css: furaffinityCss,
+	},
 	facebook: {
 		label: 'Facebook',
 		domain: ['facebook.com'],
