@@ -9,6 +9,8 @@ import { setupRouteChange } from './lib/route-change';
 import * as FbClassic from './sites/fb-classic';
 import * as Fb2020 from './sites/fb-2020';
 import * as Twitter from './sites/twitter';
+import * as Furaffinity from './sites/furaffinity';
+import * as InkBunny from './sites/inkbunny';
 import * as Reddit from './sites/reddit';
 import * as HackerNews from './sites/hackernews';
 import * as Github from './sites/github';
@@ -25,6 +27,10 @@ export function eradicate(store: Store) {
 		Reddit.eradicate(store);
 	} else if (Twitter.checkSite()) {
 		Twitter.eradicate(store);
+	} else if (Furaffinity.checkSite()) {
+		Furaffinity.eradicate(store);
+	} else if (InkBunny.checkSite()) {
+		InkBunny.eradicate(store);
 	} else if (HackerNews.checkSite()) {
 		HackerNews.eradicate(store);
 	} else if (Github.checkSite()) {

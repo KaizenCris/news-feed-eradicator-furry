@@ -1,0 +1,13 @@
+/* InkBunny feed */
+
+.widget_thumbnailFromSubmission_thumb {
+	display: none;
+}
+.up_notice_typeicon_stream {
+	display: none;
+}
+
+.widget_thumbnailFromSubmission_artist_cont,
+.widget_thumbnailFromSubmission_title_cont {
+	opacity: 0.15;
+}

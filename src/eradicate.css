@@ -267,3 +267,27 @@ html:not([data-nfe-enabled='false']) #primary > #nfe-container {
 	opacity: 0 !important;
 	pointer-events: none !important;
 }
+
+#content #contents.ytd-rich-grid-renderer {
+	display: none !important;
+}
+
+ytd-guide-entry-renderer.style-scope.ytd-guide-section-renderer:nth-child(2) {
+	display: none;
+}
+
+/* FurAffinity */
+.notification-container {
+	color: #5b5b5b !important;
+}
+
+/* InkBunny */
+#message_notification {
+	opacity: 0.1;
+}
+
+.latest_navigation,
+.popular_navigation {
+	opacity: 0 !important;
+	pointer-events: none !important;
+}
